@@ -1,3 +1,5 @@
+// Boas-vindas
+
 interface Props {
     name: string
     idade: number
