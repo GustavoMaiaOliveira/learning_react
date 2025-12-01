@@ -6,7 +6,9 @@ export function Contador() {
     return (
         <div>
             <p>Você clicou no botão {count} vezes</p>
-            <button onClick={() => setCount(count - 1)}>Diminuir</button>
+            {/* {count > 0 && ( */}
+            <button disabled={count > 0 ?  false : true} onClick={() => setCount(count - 1)}>Diminuir</button>
+        {/* )} */}
             <button onClick={() => setCount(count + 1)}>Aumentar</button>
         </div>
     );
